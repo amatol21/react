@@ -1,0 +1,114 @@
+@import "./helpers/normalize";
+@import "./common/common";
+
+
+
+
+body {
+	width: 100%;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+* {
+	@include dmsans;
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button,
+select,
+input {
+	border: none;
+	outline: none;
+}
+
+button,
+input,
+a,
+select,
+textarea,
+div {
+	&:focus {
+		outline: none;
+	}
+}
+
+
+.cover {
+	margin: 0 auto;
+}
+
+.line {
+	display: flex;
+}
+
+
+
+@media (min-width: 1920px) {
+
+	.cover {
+		max-width: 144rem;
+	}
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+	.cover {
+		max-width: 132rem;
+	}
+}
+
+@media (min-width: 1400px) and (max-width: 1599px) {
+
+	.cover {
+		max-width: 120rem;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+	.cover {
+		max-width: 114rem;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.cover {
+		max-width: 96rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.cover {
+		max-width: 72rem;
+	}
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+	.cover {
+		max-width: 54rem;
+	}
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+
+	.cover {
+		max-width: 95%;
+	}
+}

@@ -1,0 +1,91 @@
+@import '../../common/common';
+
+.add {
+	margin-bottom: 1rem;
+
+	&__content {
+		padding: 1.5rem;
+		border: 1px solid DarkGreen;
+		border-radius: 3px;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__container {
+		width: 100%;
+		margin: 0 0 2rem 0;
+	}
+
+	&__description {
+		width: 100%;
+		margin: 0 0 0 0;
+		padding: 1rem;
+		font-size: 1.6rem;
+		border: 1px solid maroon;
+		border-radius: 3px;
+
+		&:hover {
+			box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	&__service {
+		justify-content: space-between;
+		width: 100%;
+		margin: 8rem 0 0 0;
+		padding: 1.5rem;
+		border: 1px solid teal;
+	}
+
+	&__serviceLeft {
+		width: 35%;
+	}
+
+	&__inputAuthorName {
+		margin: 0 0 6rem 0;
+	}
+
+	&__serviceRight {
+		width: 50%;
+		padding: 1.5rem;
+		border: 1px solid SeaGreen;
+		border-radius: 3px;
+	}
+
+	&__authors {
+		padding: 0;
+		margin: 0;
+		height: 25rem;
+		width: 100%;
+		overflow-y: auto;
+		list-style-type: none;
+	}
+
+	&__surnamesHeader {
+		margin: 0 0 1.5rem 0;
+		font-size: 2.4rem;
+		text-align: center;
+	}
+
+	&__courseAuthors {
+		margin: 0;
+		padding: 0;
+		height: 20rem;
+		width: 100%;
+		overflow-y: auto;
+		list-style-type: none;
+	}
+
+	&__error {
+		width: 100%;
+		margin: 1rem 0 0 0;
+		font-size: 1.8rem;
+		color: DarkRed;
+	}
+
+	&__error2 {
+		margin: 0;
+		font-size: 1.8rem;
+		color: DarkRed;
+	}
+}

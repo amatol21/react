@@ -1,0 +1,15 @@
+@import '../../common/common';
+
+.add {
+
+	&__courseAuthorsItem {
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 0 1rem 0;
+	}
+
+	&__courseAuthorName {
+		font-size: 1.8rem;
+		flex-grow: 1;
+	}
+}

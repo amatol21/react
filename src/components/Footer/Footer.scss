@@ -1,0 +1,14 @@
+@import '../../common/common';
+
+.footer {
+	height: 15vh;
+	padding: 1vh 0;
+	min-height: 8.5rem;
+
+	&__content {
+		height: 13vh;
+		//padding: 4rem;
+		border: 1px solid DarkBlue;
+		border-radius: 3px;
+	}
+}

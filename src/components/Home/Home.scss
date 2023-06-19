@@ -1,0 +1,56 @@
+@import "../../common/common";
+
+
+.main {
+
+	&__content {
+		justify-content: space-between;
+		border: 1px solid navy;
+		flex-wrap: wrap;
+		padding: 1.5rem;
+		border-radius: 3px;
+	}
+
+	&__header {
+		width: 100%;
+		margin: 0 0 2rem 0;
+		font-size: 3.5rem;
+		color: black;
+		font-weight: 900;
+	}
+
+	&__option {
+		margin: 0 0.5rem;
+		padding: 1rem 1.5rem;
+		font-size: 1.8rem;
+		color: black;
+		border: 1px solid black;
+		border-radius: 3px;
+		background-color: #eee;
+	}
+}
+
+.search {
+	flex-grow: 1;
+
+	&__input {
+		width: 30%;
+		margin: 0 1rem 0 0;
+		padding: 1rem;
+		border: 1px solid black;
+		border-radius: 3px;
+		font-size: 1.8rem;
+	}
+
+}
+
+.result {
+	width: 100%;
+	padding: 0 1.5rem;
+	border: 1px solid green;
+	border-radius: 3px;
+
+
+
+
+}

@@ -1,0 +1,13 @@
+@import '../common';
+
+.button {
+	padding: 1rem 2rem;
+	font-size: 1.6rem;
+	background-color: #eee;
+	border: 1px solid black;
+	border-radius: 3px;
+
+	&:hover {
+		box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.4);
+	}
+}

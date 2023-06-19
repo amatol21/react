@@ -1,0 +1,75 @@
+@import "../../common/common";
+
+.course {
+	margin: 1.5rem 0;
+	border: 1px solid SteelBlue;
+	border-radius: 3px;
+
+	&__left {
+		width: 85%;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		padding: 1.5rem;
+		border-right: 1px solid black;
+	}
+
+	&__right {
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 1.5rem;
+	}
+
+	&__list {
+		padding: 0;
+		list-style-type: none;
+	}
+
+	&__header {
+		width: 100%;
+
+		a {
+			font-size: 2.8rem;
+			font-weight: 700;
+			text-decoration: underline;
+		}
+	}
+
+	&__description {
+		font-size: 1.6rem;
+		color: black;
+	}
+
+	&__edit {
+		background-color: #eee;
+		display: inline-block;
+		margin: 0 1rem 0 auto;
+		padding: 1rem 2rem;
+		font-size: 1.6rem;
+		color: black;
+		border: 1px solid black;
+		border-radius: 3px;
+	}
+
+	&__delete {
+		background-color: #eee;
+		display: inline-block;
+		padding: 1rem 2rem;
+		font-size: 1.6rem;
+		color: black;
+		border: 1px solid black;
+		border-radius: 3px;
+	}
+
+	&__name {
+		margin: 0;
+		font-size: 1.6rem;
+		color: black;
+		font-weight: 700;
+	}
+
+	&__element {
+		margin: 0;
+		font-size: 1.6rem;
+		color: black;
+	}
+}

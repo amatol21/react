@@ -1,5 +1,5 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-
+import { createSlice, createAction } from '@reduxjs/toolkit';
+/*
 export const fetchCourses = createAsyncThunk(
 	'fullCoursesList/fetchCourses',
 	async function () {
@@ -7,11 +7,12 @@ export const fetchCourses = createAsyncThunk(
 		const data = await response.json();
 		return data;
 	}
-)
+) */
 
 export const fullCoursesListSlice = createSlice({
 	name: 'fullCoursesList',
 	initialState: {
+		isLoading: false,
 		coursesList: [
 			{
 				header: "Курс по javascript",
@@ -36,16 +37,21 @@ export const fullCoursesListSlice = createSlice({
 		value: 1
 	},
 	reducers: {
-		increment: (state) => state.value++,
+		getCoursesSuccess: (state, action) => {
+			state.coursesList = [...action.payload];
+		}
 
-	},
-	extraReducers: {
+	}
+	/*extraReducers: {
 		[fetchCourses.fulfilled]: (state, action) => {
 			state.coursesList = [...action.payload];
 		}
-	}
+	}*/
 });
 
-export const { increment } = fullCoursesListSlice.actions;
+export const GET_COURSES = 'courses/getCourses';
+export const getCourses = createAction(GET_COURSES);
+
+export const { getCoursesSuccess, getCoursesFetch } = fullCoursesListSlice.actions;
 
 export default fullCoursesListSlice.reducer;

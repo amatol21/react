@@ -1,2 +1,2 @@
-Ёта ветка показывает код дл€ правильной работы createAsyncThunk redux toolkit.
-—лайсы смотреть в store. ј запросы к слайсам из компонента Home.
+Ёта ветка показывает код дл€ правильной работы простейшего варианта соединени€ redux saga и redux toolkit
+и creeateAction из redux toolkit.

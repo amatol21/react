@@ -5,7 +5,7 @@ import Button from '../../common/Button/Button';
 import Input from '../../common/Input/Input';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchCourses } from '../../store/FullCoursesListSlice/FullCoursesListSlice';
+import { getCoursesSuccess, getCourses } from '../../store/FullCoursesListSlice/FullCoursesListSlice';
 
 const Home = () => {
 
@@ -28,7 +28,7 @@ const Home = () => {
 				<form action="#" className="search line">
 					<Input style={{ marginRight: '1rem', width: '35rem' }} placeholder="Название курса" value={courseName} onChange={setCourseName} />
 					<Button text="Искать" style={{ marginRight: '2rem' }} />
-					<Button text="Получить курсы" onClick={() => dispatch(fetchCourses())} style={{ marginRight: '2rem' }} />
+					<Button text="Получить курсы" onClick={() => dispatch(getCourses())} style={{ marginRight: '2rem' }} />
 				</form>
 
 				<Link to="/add_course">
